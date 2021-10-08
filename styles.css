@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+
+
 section {
   height: 100vh;
+ 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -7,28 +12,58 @@ section {
 }
 
 section:nth-of-type(even) {
-  background-color: #000000;
+  background-color: lightgrey;
 }
+
+/*******************P1*****************************************/
 
 .the-pen {
-  background-image: url(assets/the-pen.svg);
+  background-image: url(assets/hexdec.svg);
+ 
+/* content   */
+  font-family: 'Oxygen', sans-serif;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 15vmin;
 }
 
+/*******************^P1^*****************************************/
+
+/*******************P2*****************************************/
 .is-mightier {
-  background-image: url(assets/is-mightier.svg);
+/*   background-image: url(assets/Bio.svg); */
+  font-family: 'Oxygen', sans-serif;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3vmin;
+  font-color : white;
 }
+
+p{
+    margin: 10%;
+ 
+}
+
+/*******************^P2^*****************************************/
 
 .than {
-  background-image: url(assets/than.svg);
+/*   background-image: url(assets/than.svg); */
+  background-image: url(assets/hexdec.svg);
+   
 }
 
 .the-sword {
-  background-image: url(assets/the-sword.svg);
+/*   background-image: url(assets/the-sword.svg); */
 }
 
 .end {
-  background-image: url(assets/end.svg);
-  background-color: #00F10A;
+/*   background-image: url(assets/end.svg); */
+  background-image: url(assets/hexdec.svg);
+  
 }
 
 footer {  
@@ -39,11 +74,7 @@ footer {
   text-align: center;
 }
 
-/* 
-   NOTE: this bit of code below is called a media query. 
-   You'll learn more about media queries in the next project,
-   so feel free to skip this part if it doesn't make sense yet! 
-*/
+
 @media (max-width: 800px) {
   section {
     background-attachment: scroll;
